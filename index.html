@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="src/style.css" rel="stylesheet" type="text/css">
+        <script src="src/jquery.js"></script>
+        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+        <title>Rick&Morty</title>
+    </head>
+    <body class="background-grey">
+        <script src="src/script.js"></script>
+        <!--Just the title of the page-->
+        <header class="header"> 
+            <h1 class="header__title">R<span class="half--font">ick and </span>M<span class="half--font">orty</span></h1>
+            <button class="chapters-button top--left hidden">Chapters</button>
+        </header>
+        <div class="flex--row">
+            <!--Side nav of the page, contains all the chapters as buttons and buttons to show them-->
+            <aside class="aside show">
+                <img class="aside-background" src="src/assets/drawing (2).png" width="16%">
+                <nav class="aside-nav">
+                    <ul class="aside-nav__list">
+                        <img class="aside-nav__img" src="src/assets/drawing.png" width="95%">
+                    </ul>
+                </nav>
+            </aside>
+            <!--Parent of every card showed (character, episode, location)-->
+            <main class="main flex--row">                
+            </main>
+            <!--Just an image, it should have more functionalities but...-->
+            <aside class="aside show">
+                <img src="src/assets/head.png" width="85%">
+                <div class="background-time"></div>
+            </aside>
+        </div>
+    </body>
+</html>
